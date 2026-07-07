@@ -86,15 +86,6 @@ curl -X PATCH http://localhost:8080/tickets/<id>/status \
   -d '{"status":"in_progress"}'
 ```
 
-## Deployment
-
-### Render (recommended free tier)
-
-1. Push this repository to GitHub.
-2. Create a new **Web Service** on [Render](https://render.com).
-3. Connect your GitHub repo and select **Docker** as the runtime.
-4. Set environment variable `JWT_SECRET` to a strong random string.
-5. Deploy. Render sets `PORT` automatically.
 
 After deployment, verify:
 
@@ -102,12 +93,10 @@ After deployment, verify:
 curl https://<your-app>.onrender.com/health
 ```
 
-### Deployed URL
+## Deployed URL
 
-> **Update this after deployment:**
->
-> - App URL: `https://your-app.onrender.com`
-> - Health check: `https://your-app.onrender.com/health`
+* App URL: `https://ticket-system-5z9p.onrender.com`
+* Health check: `https://ticket-system-5z9p.onrender.com/health`
 
 ## Assumptions
 
