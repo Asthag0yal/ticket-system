@@ -86,11 +86,11 @@ curl -X PATCH http://localhost:8080/tickets/<id>/status \
   -d '{"status":"in_progress"}'
 ```
 
-
 After deployment, verify:
 
-```bash
-curl https://<your-app>.onrender.com/health
+\`\`\`
+curl https://ticket-system-5z9p.onrender.com/health
+\`\`\`
 ```
 
 ## Deployed URL
